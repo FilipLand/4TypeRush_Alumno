@@ -1,0 +1,42 @@
+TYPERUSH — ACTIVIDAD PARA EL ALUMNADO (2.º DAW)
+
+OBJETIVO: Terminar un juego de mecanografía con JavaScript puro.
+Tienes 60 segundos para escribir las 8 palabras. Cada palabra incorrecta resta 5 segundos.
+Si completas todas, ganas. Si el tiempo llega a cero, pierdes.
+
+ARCHIVOS
+- index.html: estructura preparada (no necesitas modificarla).
+- styles.css: diseño preparado (no necesitas modificarlo).
+- app.js: aquí debes programar.
+
+CÓMO EMPEZAR
+1. Abre index.html en el navegador y app.js en el editor.
+2. Abre las herramientas del desarrollador (F12) y mira la consola.
+3. Busca RETO 1 en app.js. Completa y comprueba antes de continuar.
+
+RETOS (EN ORDEN)
+[ ] 1. Mostrar las 8 palabras como elementos span.
+[ ] 2. Al pulsar Intro: eliminar palabras correctas y restar 5 s por error.
+[ ] 3. Activar el temporizador de 60 segundos con setInterval.
+[ ] 4. Ganar/perder: detener el reloj, bloquear la entrada y mostrar mensaje.
+
+COMPROBACIONES
+[ ] Se ven las ocho palabras al abrir la página.
+[ ] Comenzar permite escribir.
+[ ] ARRAY + Intro elimina ARRAY, sin afectar a las demás.
+[ ] Una palabra incorrecta resta exactamente 5 segundos.
+[ ] El reloj disminuye cada segundo una vez iniciada la partida.
+[ ] Al acabar las palabras aparece un mensaje de victoria.
+[ ] Al llegar a 0 aparece un mensaje de derrota y se bloquea la entrada.
+[ ] Reiniciar permite jugar otra vez desde el principio.
+
+AYUDAS
+- pendientes.includes(palabra) devuelve true o false.
+- pendientes.filter(p => p !== palabra) crea un array sin esa palabra.
+- Math.max(0, segundos - PENALIZACION) impide tiempos negativos.
+- clearInterval(intervalo) detiene el reloj.
+
+IMPORTANTE
+El HTML y el CSS están preparados. No necesitas instalar Node.js ni conexión a Internet.
+La versión inicial está incompleta a propósito: algunas acciones no funcionarán hasta resolver los retos.
+Trabaja por etapas y prueba cada cambio. Entrega la carpeta con los tres archivos.

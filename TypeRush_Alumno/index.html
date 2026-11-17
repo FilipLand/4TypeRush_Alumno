@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TypeRush — Contrarreloj</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="juego">
+    <header><h1>⌨️ TypeRush ⌨️</h1><p>Escribe todas las palabras antes de que se acabe el tiempo.</p></header>
+    <section class="marcadores" aria-label="Marcadores">
+      <div><small>Tiempo restante</small><strong id="tiempo">60 s</strong></div>
+      <div><small>Completadas</small><strong id="contador">0 / 8</strong></div>
+    </section>
+    <div class="barra"><div id="progreso-tiempo"></div></div>
+    <h2>Palabras pendientes</h2>
+    <div id="palabras" class="palabras"></div>
+    <form id="formulario">
+      <input id="entrada" type="text" placeholder="Escribe una palabra y pulsa Intro" autocomplete="off" disabled aria-label="Palabra">
+      <button id="comprobar" type="submit" disabled>Comprobar ↵</button>
+    </form>
+    <p id="mensaje" role="status">Pulsa Comenzar para jugar.</p>
+    <div class="acciones"><button id="comenzar" type="button">▶ Comenzar</button><button id="reiniciar" type="button" class="secundario">↻ Reiniciar</button></div>
+    <footer>Palabra incorrecta: −5 segundos · 60 segundos para completar todas.</footer>
+  </main>
+</body>
+</html>

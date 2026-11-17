@@ -1,0 +1,25 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 20px; font-family: system-ui, Arial, sans-serif; background: #101827; color: #eaf1fa; }
+.juego { width: min(100%, 700px); padding: 30px; background: #1c2940; border: 1px solid #35445e; border-radius: 18px; box-shadow: 0 18px 55px #0005; }
+h1 { margin: 0; font-size: 2.1rem; } 
+header p, footer { color: #aebbd0; } 
+h2 { font-size: 1rem; margin-top: 28px; }
+.marcadores { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 25px; }
+.marcadores > div { background: #273650; border-radius: 12px; padding: 16px; text-align: center; }
+small { display: block; color: #b7c4d8; } 
+strong { display: block; font-size: 2rem; margin-top: 5px; }
+.barra { background: #3c4b63; height: 10px; border-radius: 20px; overflow: hidden; margin-top: 15px; }
+#progreso-tiempo { background: #38bda1; height: 100%; width: 100%; transition: width .25s; }
+.palabras { display: flex; flex-wrap: wrap; gap: 9px; min-height: 72px; align-content: flex-start; }
+.palabra { background: #32415d; padding: 9px 13px; border-radius: 8px; font-weight: 700; letter-spacing: .04em; }
+form { display: flex; gap: 10px; margin-top: 24px; } 
+input { flex: 1; min-width: 0; background: #111b2b; color: white; border: 1px solid #667a9b; padding: 13px; border-radius: 8px; font: inherit; }
+button { border: 0; border-radius: 8px; padding: 12px 16px; background: #38bda1; color: #08251f; font-weight: 700; cursor: pointer; } 
+button:disabled { opacity: .45; cursor: not-allowed; }
+.acciones { display: flex; gap: 10px; } 
+.secundario { background: #455774; color: white; } 
+#mensaje { min-height: 24px; color: #f7d78c; } 
+footer { font-size: .85rem; margin-top: 24px; }
+@media(max-width:500px) { 
+    .juego { padding: 18px; } 
+    form { flex-direction: column; } }
